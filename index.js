@@ -104,8 +104,8 @@ const perguntas = [
   // loop ou laço de repetição
   //para colocar todas perguntas completas e individuais
   for(const item of perguntas) {
-    const quizItem = template.content.cloneNode(true)
-    quizItem.querySelector('h3').textContent = item.pergunta
+      const quizItem = template.content.cloneNode(true)
+      quizItem.querySelector('h3').textContent = item.pergunta
     
     //colocando as respostas na tela para selecionar
     for(let resposta of item.respostas) {
@@ -116,11 +116,11 @@ const perguntas = [
       dt.querySelector("input").onchange = (event) => {
         const estaCorreta = event.target.value == item.correta
         
-        corretas.delete.item
+        corretas.delete(item)
         if(estaCorreta) {
           corretas.add(item)
         }
-
+        alert(corretas.size)
         mostrarTotal.textContent = corretas.size + " de " + totalDePerguntas
       }
   
