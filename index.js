@@ -120,7 +120,6 @@ const perguntas = [
         if(estaCorreta) {
           corretas.add(item)
         }
-        alert(corretas.size)
         mostrarTotal.textContent = corretas.size + " de " + totalDePerguntas
       }
   
