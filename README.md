@@ -1,2 +1,7 @@
 # nlw-experts
-Projeto de Quiz com html, css e javascript.
+Projeto de Quiz com as tecnologias:
+
+- HTML
+- CSS
+- Javascript
+- Github
