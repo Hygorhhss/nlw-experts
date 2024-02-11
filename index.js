@@ -116,6 +116,7 @@ const perguntas = [
       dt.querySelector("input").onchange = (event) => {
         const estaCorreta = event.target.value == item.correta
         
+        
         corretas.delete(item)
         if(estaCorreta) {
           corretas.add(item)
